@@ -71,6 +71,7 @@ for (let i = 0; i < planet.length; i++){
 
 const button = document.getElementById('cari');
 button.addEventListener('click', function(){
+    tbody.innerHTML = "<tr>" + "<th>" + "Name" + "<th>" + "Rotation Period" + "<th>" + "Orbital Period" + "<th>" + "Diameter"
     let planetName = planet.filter(key => key.rotation_period === document.getElementById('input').value);
     for (let i = 0; i < planetName.length; i++){
         let tr = "<tr>";
